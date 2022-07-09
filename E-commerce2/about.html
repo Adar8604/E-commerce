@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link rel="stylesheet" href="general.css">
+    <style>     
+        .nav1{
+            height: 5.5em;
+            align-items: center;
+        }
+        .about {
+            background: url(abot.jpg) no-repeat center center/cover ;
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .about h2 {
+            font-size: 50px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-weight: bolder;
+            color: #3af60b;
+
+        }
+
+        .about p {
+            font-size: 30px;
+            line-height: 40px;
+            padding: 30px;
+            color: white;
+        }
+
+        #para {
+            display: none;
+            font-size: 30px;
+            line-height: 40px;
+            padding: 30px;
+            color: white;
+        }
+
+        #bttn {
+            font-size: 20px;
+            background-color: #7474da;
+            padding: 15px;
+            border-radius: 25px;
+        }
+
+        .ad {
+            opacity: 0;
+        }
+    </style>
+
+</head>
+
+<body>
+    <nav class="nav1 nav2">
+        <div class="logo">
+            <a href=""><img src="logo.jpg" alt=""></a>
+        </div>
+        <div class="content">
+            <a href="index.html">Home</a>
+            <a href="service.html">Services</a>
+            <a href="about.html">About Us</a>
+            <a href="login.html">Login/Sign Up</a>
+        </div>
+    </nav>
+    <section class="about">
+        <h2>About Our Team</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et repellat voluptatem architecto optio ut quam
+            deserunt eius suscipit labore illum. Quisquam iste nihil quidem cum rem ea nemo explicabo provident!</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni perferendis vero deserunt harum voluptatibus
+            animi ex ducimus distinctio ut maiores!</p>
+        <p id="para">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ducimus vel impedit necessitatibus, fugit
+            repellat numquam!
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut maiores laboriosam cum.
+        </p>
+        <button id="bttn" onclick="read()">Read More/Less</button>
+    </section>
+
+    <script>
+        let bt = document.getElementById('para');
+        function read() {
+            if (bt.style.display != 'block') {
+                bt.style.display = 'block';
+            }
+            else {
+                bt.style.display = 'none';
+            }
+        }
+    </script>
+</body>
+
+</html>
